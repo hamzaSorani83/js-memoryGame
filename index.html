@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>js-memoryGame</title>
+</head>
+
+<body>
+    <div class="control-buttons" id="control-buttons">
+        <span>Start Game</span>
+    </div>
+    <div class="memory-game">
+        <div class="info">
+            <div class="name" id="name">
+                Hello: <span></span>
+            </div>
+            <div class="time">
+                <span>0</span> sec
+            </div>
+            <div class="point">
+                <span>0</span> points
+            </div>
+            <div class="tries">
+                Wrong Tries: <span>0</span>
+            </div>
+        </div>
+        <div class="memory-game-blocks">
+            <div class=" game-block  " data-technology="angular">
+                <div class="front face"></div>
+                <div class="back face">
+                    <i class="fab fa-galactic-republic"></i>
+                </div>
+            </div>
+            <div class=" game-block  " data-technology="bootstrap">
+                <div class="front face"></div>
+                <div class="back face">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class=" game-block  " data-technology="css">
+                <div class="front face"></div>
+                <div class="back face">
+                    <i class="fab fa-opencart"></i>
+                </div>
+            </div>
+            <div class=" game-block  " data-technology="html">
+                <div class="front face"></div>
+                <div class="back face">
+                    <i class="fab fa-jenkins"></i>
+                </div>
+            </div>
+            <div class=" game-block  " data-technology="jquery">
+                <div class="front face"></div>
+                <div class="back face">
+                    <i class="fab fa-android"></i>
+                </div>
+            </div>
+            <div class=" game-block  " data-technology="js">
+                <div class="front face"></div>
+                <div class="back face">
+                    <i class="fab fa-facebook"></i>
+                </div>
+            </div>
+            <div class=" game-block  " data-technology="json">
+                <div class="front face"></div>
+                <div class="back face">
+                    <i class="fab fa-facebook-messenger"></i>
+                </div>
+            </div>
+            <div class=" game-block  " data-technology="nodejs">
+                <div class="front face"></div>
+                <div class="back face">
+                    <i class=" far fa-hand-peace"></i>
+                </div>
+            </div>
+            <div class=" game-block  " data-technology="python">
+                <div class="front face"></div>
+                <div class="back face">
+                    <i class="fab fa-earlybirds"></i>
+                </div>
+            </div>
+            <div class=" game-block  " data-technology="vuejs">
+                <div class="front face"></div>
+                <div class="back face">
+                    <i class="fas fa-gem"></i>
+                </div>
+            </div>
+            <div class=" game-block  " data-technology="angular">
+                <div class="front face"></div>
+                <div class="back face">
+                    <i class="fab fa-galactic-republic"></i>
+                </div>
+            </div>
+            <div class=" game-block  " data-technology="bootstrap">
+                <div class="front face"></div>
+                <div class="back face">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class=" game-block  " data-technology="css">
+                <div class="front face"></div>
+                <div class="back face">
+                    <i class="fab fa-opencart"></i>
+                </div>
+            </div>
+            <div class=" game-block  " data-technology="html">
+                <div class="front face"></div>
+                <div class="back face">
+                    <i class="fab fa-jenkins"></i>
+                </div>
+            </div>
+            <div class=" game-block  " data-technology="jquery">
+                <div class="front face"></div>
+                <div class="back face">
+                    <i class="fab fa-android"></i>
+                </div>
+            </div>
+            <div class=" game-block  " data-technology="js">
+                <div class="front face"></div>
+                <div class="back face">
+                    <i class="fab fa-facebook"></i>
+                </div>
+            </div>
+            <div class=" game-block  " data-technology="json">
+                <div class="front face"></div>
+                <div class="back face">
+                    <i class="fab fa-facebook-messenger"></i>
+                </div>
+            </div>
+            <div class=" game-block  " data-technology="nodejs">
+                <div class="front face"></div>
+                <div class="back face">
+                    <i class=" far fa-hand-peace"></i>
+                </div>
+            </div>
+            <div class=" game-block  " data-technology="python">
+                <div class="front face"></div>
+                <div class="back face">
+                    <i class="fab fa-earlybirds"></i>
+                </div>
+            </div>
+            <div class=" game-block  " data-technology="vuejs">
+                <div class="front face"></div>
+                <div class="back face">
+                    <i class="fas fa-gem"></i>
+                </div>
+            </div>
+        </div>
+        <section id="post" class="hidden">
+            <div>
+                <p>BRAVO <span></span>!</p>
+                <p id="final"></p>
+                <br>
+                <p>
+                    <a id="again">Play Again !</a>
+                </p>
+            </div>
+        </section>
+    </div>
+    <audio src="success.wav" preload="auto" id="success"></audio>
+    <audio src="fail.wav" preload="auto" id="fail"></audio>
+    <audio src="start-game.wav " preload="auto" id="startGame"></audio>
+    <script src="main.js"></script>
+</body>
+
+</html>
